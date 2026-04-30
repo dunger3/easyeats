@@ -4,7 +4,7 @@
   "scripts": {
     "setup": "npm install && cd client && npm install && cd .. && cp -n .env && mkdir -p uploads",
     "dev": "concurrently \"nest start --watch\" \"npm run dev --prefix client\"",
-    "build": "npm install --prefix client && npm run build --prefix client && nest build",
+    "build": "npm install --prefix client --include=dev && npm run build --prefix client && nest build",
     "start": "node dist/main",
     "start:dev": "nest start --watch",
     "start:prod": "node dist/main"
