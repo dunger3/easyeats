@@ -56,7 +56,7 @@ easyeats/
 ---
 
 ## Setup
-Note: Only needs to be run the first time trying to start the project
+Note: This only needs to be ran one time before starting up the project for the first time
 ```bash
 # Install deps for backend + frontend, copy .env.example → .env
 npm run setup
