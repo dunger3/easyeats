@@ -77,6 +77,11 @@ JWT_EXPIRATION=1h
 PORT=3000
 ```
 
+Note: To generate the jwt token needed use:
+```bash
+node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+```
+
 ---
 
 ## Development
